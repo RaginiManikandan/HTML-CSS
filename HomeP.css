@@ -1,0 +1,207 @@
+*{
+margin: 0;
+padding: 0;
+font-family: century;
+}
+
+.main{
+height:120vh;
+background-image: linear-gradient(rgba(241, 50, 213, 0.3), rgba(241, 50, 213, 0.3)), url(images/home.png);
+background-position: center;
+background-size: cover;
+background-attachment:scroll;
+}
+
+.navbar ul{
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap:2em;
+    flex-wrap: wrap;
+    
+}
+.navbar img{
+
+    float: left;
+    width: 80px;
+    height:70px;
+    border-radius: 10px 40px;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+   
+ul li{
+
+    list-style: none;
+    margin-top: 1%;
+}
+
+ul li a{
+
+    text-decoration: none;
+    color:white;
+    font-size: 18px;
+    border:1px solid transparent;
+    padding: 5px 10px;
+    font-weight: bold;
+    transition: .4 ease;
+}
+ul li a:hover{
+
+    background-color: white;
+    color:black;
+}
+
+.title{
+position:absolute;
+top:47%;
+left:46%;
+transform: translate(-53%, -30%);
+}
+
+.title h1{
+text-shadow: 4px 4px 4px hotpink;
+color:#fff;
+font-size: 60px;
+}
+
+.button{
+
+position:absolute;
+top:57%;
+left:37%;
+transform: translate(-5%, -30%);
+}
+.button a{
+ 
+    text-decoration: none;
+    font-size:15px;
+    color: hotpink;
+    font-weight: 20px;
+    font-family: cursive;
+    border:1px solid #fff;
+    padding: 2px;
+}
+
+.button a:hover{
+background-color: #fff;
+color:black;
+
+}
+
+.sub-menu{
+display: none;
+}
+
+.sub-menu ul{
+
+    position:absolute;
+}
+
+.navbar ul li:hover .sub-menu{
+
+    display: block;
+    }
+    
+.navbar ul li:hover .sub-menu ul{
+
+    display: block;
+    margin-left: 30px;
+       
+}
+
+.navbar ul li:hover .sub-menu ul li{
+
+    width:90px;
+    padding:0px;
+    background: transparent;
+    text-align: left;
+    border-radius: 50px;
+}
+
+
+.footer{
+position:absolute;
+bottom:10%;
+left:39%;
+background-color: #fff;
+width:250px;
+height:35px;
+opacity: .9;
+}
+.icons a{
+    
+  margin:5px;
+  padding: 8px;
+  border-radius:50%;
+  box-sizing: border-box;
+  }
+
+.icons a i{
+margin-top: 7px;
+font-size:20px;
+color:black;
+opacity: 0.9;
+border-radius:50%;
+}
+.icons a:hover{
+
+background-color: hotpink;
+transition: .5s;
+}
+.icons a:hover i{
+background-color: white;
+transition: 0.5s;
+}
+.navbar ul i{
+font-size: 15px;
+margin:2px;
+}
+    
+.active{
+
+background-color: #fff;
+
+}
+
+.active a{
+
+    color: hotpink;
+}
+
+
+@media Screen and (max-width: 900px){
+ 
+.title h1{
+
+font-size:20px;
+
+}
+
+.button a{
+
+display:block;
+}
+}
+
+
+
+@media screen and (max-width:480px){
+    
+.navbar ul{
+
+gap:10px;
+
+}
+
+.footer{
+
+width:180px;
+height:60px;
+}
+
+
+}
+
+
