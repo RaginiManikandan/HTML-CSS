@@ -1,0 +1,224 @@
+.bg-laborday {
+  background-image: url('asserts/labour-banner4.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hlw:hover {
+
+  transform: scale(.8);
+}
+
+
+.hero-section {
+  background-image: url('asserts/labour-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-section .container {
+  z-index: 2;
+  position: relative;
+}
+
+.hero-section h1,
+.hero-section p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 0;
+  max-width: 800px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #0d6efd;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px;
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-item .content {
+  position: relative;
+  border-radius: 8px;
+}
+
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 4px solid #0d6efd;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-item.left::after {
+  right: -10px;
+}
+
+.timeline-item.right::after {
+  left: -10px;
+}
+
+
+
+
+.flip-card {
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  position: relative;
+
+}
+
+
+.flip-card-front,
+.flip-card-back {
+
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+
+} 
+
+
+.flip-card:hover .flip-card-inner {
+
+  transform: rotateY(-160deg);
+
+}
+
+.flip-card-back {
+
+  transform: rotateY(-180deg);
+  backface-visibility: hidden;
+}
+
+.flip-card-back img {
+
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.event:hover {
+
+  transform: rotateY(40deg);
+
+}
+
+
+
+.image-gallery1,
+.image-gallery2,
+.image-gallery3,
+.image-gallery4,
+.image-gallery5,
+.image-gallery6 {
+  position: relative;
+}
+
+
+.hover-image {
+
+  display: none;
+
+}
+
+.image-gallery1:hover .hover-image,
+.image-gallery2:hover .hover-image,
+.image-gallery3:hover .hover-image,
+.image-gallery4:hover .hover-image,
+.image-gallery5:hover .hover-image,
+.image-gallery6:hover .hover-image {
+
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: .1s ease;
+}
+
+.image-gallery1:hover .original-image,
+.image-gallery2:hover .original-image,
+.image-gallery3:hover .original-image,
+.image-gallery4:hover .original-image,
+.image-gallery5:hover .original-image,
+.image-gallery6:hover .original-image {
+
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 8px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 15px;
+    text-align: left;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0;
+  }
+
+  .timeline-item.left::after,
+  .timeline-item.right::after {
+    left: 0;
+  }
+}

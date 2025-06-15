@@ -1,0 +1,88 @@
+*{
+margin:0px;
+padding:0px;
+}
+.wrapper {
+    width: 100%;
+    height: 1200px;
+    background-image: url(./asserts/Form4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+position: relative;      
+}
+
+.main{
+width:50%;
+height:70%;
+background-color: rgba(7,47,79,.6);
+position: absolute;
+left:26%;
+top: 10%;
+border-radius: 20px 20px 30px 30px;
+}
+
+label{
+display:inline-block;
+width:100px;
+color: #fff;
+padding: 10px;
+}
+
+h2{
+text-align: center;
+color: #fff;
+padding: 15px;
+background: linear-gradient(to right, #f8BB00, #d88004) ;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    gap:20px;
+    padding-top: 25px;
+}
+.button, .reset{
+    text-align: center;    
+    border:4px groove #d88004;
+    border-radius:5px;
+    overflow:hidden;
+    cursor:pointer;
+    font-family:san-serif;
+    width: 70px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Submit button */
+.button {
+    background: linear-gradient(to right, #ff4d4d, #b30000);
+}
+
+/* Reset button */
+.reset {
+    background: linear-gradient(to right, #ff4d4d, #b30000);
+}
+
+/* Hover effects */
+.button:hover {
+    background: linear-gradient(to right, #d88004, #f8BB00);
+    transform: scale(1.05); 
+}
+
+.reset:hover {
+    background: linear-gradient(to right, #d88004, #f8BB00);
+    transform: scale(1.05);
+}
+
+/* Button container for alignment */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; 
+    margin-top: 20px;
+}

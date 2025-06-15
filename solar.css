@@ -1,0 +1,76 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.container {
+    width: 100vW;
+    height: 100vh;
+    background: url("./asserts/galaxy.jpg");
+}
+
+
+.sun {
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+
+    background: lch(55.39% 90.15 41.11);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-shadow: 10px 10px 75px 10px hsl(0, 89%, 48%);
+}
+
+
+.earth {
+    height: 75px;
+    width: 75px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: url("./asserts/earth.jfif");
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    animation: earth-orbit 8s linear infinite;
+}
+
+/* moon */
+.earth::after {
+    content: "";
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: url("./asserts/full-moon.webp");
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: moon-orbit 5s infinite linear;
+}
+
+
+@keyframes earth-orbit {
+    from {
+        transform: rotate(0deg) translate(250px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translate(250px) rotate(-360deg);
+    }
+}
+
+@keyframes moon-orbit {
+    from {
+        transform: rotate(0deg) translate(75px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translate(75px) rotate(-360deg);
+    }
+
+}

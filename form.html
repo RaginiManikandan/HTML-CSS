@@ -1,0 +1,108 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    
+<link rel="stylesheet" href="form.css">
+
+</head>
+<body>
+
+<div class="wrapper">
+
+<div class="main">
+
+<div class="head"><h2>Student Registration Form</h2></div>
+
+<div class="form">
+
+<form>
+
+<div><label for="fname">First Name:</label>
+<input type="text" name="fname" autofocus="on" required></div>
+
+<div><label for="lname">Last Name:</label>
+<input type="text" name="lname"></div>
+
+<div><label for="uname">User Name:</label>
+<input type = "text" name="uname" placeholder="Enter the User Name"></div>
+
+<div><label for="pwd">Password:</label>
+<input type = "password" name="pwd" id="pwd" required pattern="[A-Z a-z] {5 .,!}" title="Set your password as 5 character length with any one of the special charectes .,!"></div>
+
+<div><label for="email">Email:</label>
+<input type = "email" name="email" multiple></div>
+    
+<div><label for="proof">Update the Proof:</label>
+<input type = "file" name="proof"></div>
+        
+<div><label for="dob">DOB:</label>
+<input type = "date" name="dob"></div>
+        
+                <div><label for="gen">Gender:</label>
+                <input type = "radio" name="gen" value="Female" checked>
+                <label for="male">Female</label>
+                <input type = "radio" name="gen" value="Male">
+                <label for="male">Male</label></div>
+               
+                <div><label for="age">Age:</label>
+                    <input type = "number" name="age" step=1, min="18", max="28"></div>
+                    
+                    <div><label for="tel">Tel:</label>
+                        <input type = "Tel" name="tel" value="+91"></div>
+    
+                        <div><label for="url">URL:</label>
+                            <input type = "URL" name="URL" ></div>
+    
+                            <div class="course"><label for="course">Course:</label>
+                                <select name="course">
+                                     <option></option>
+                                     <option>HTML</option>
+                                     <option>CSS</option>
+                                     <option>JS</option>
+                                     <option>React</option>
+                                     <option>SQL</option>
+                                </select>
+                                </div>
+
+                                <div><label for="skill">Skills:</label>
+                                <input type="checkbox" name="skill" checked>
+                                <label>HTML</label>    
+                                <input type="checkbox" name="skill" checked>
+                                <label>CSS</label>
+                                <input type="checkbox" name="skill">
+                                <label>JS</label>
+                                <input type="checkbox" name="skill">
+                                <label>React</label>    
+                                </div>                  
+                              
+                                    <fieldset>
+                                    <legend style="color: #fff">Study Background</legend>
+                                    <label for="details">10<sup>th</sup> std details:</label>
+                                    <input type="text" name="details"><br>
+                                    <label for="details">12<sup>th</sup> std details:</label>
+                                    <input type="text" name="details">
+                                    </fieldset>
+    
+                                    <label>Comments:</label>
+
+                                    <input type="textarea" maxlength="50" size="50px">
+                                    
+                                       <div class="container">
+                                        <div > <button type="Submit" class="button" onclick="alert('Form Submitted Sucessfully')">Submit</button></div>
+                            
+                                        <div> <button type="Reset" class="reset" onclick="alert('Data Cleared')">Reset</button></div>
+                                        </div>                
+                                        </form>
+
+</div>
+
+</div>
+
+</div>
+
+
+</body>
+</html>

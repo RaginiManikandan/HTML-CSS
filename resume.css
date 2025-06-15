@@ -1,0 +1,47 @@
+*{
+margin:0px;
+padding:0px;
+box-sizing: border-box;
+}
+
+body{
+font-family: 'Montserrat', sans-serif;
+line-height: 1.5;
+background: linear-gradient(to right, gray, white);
+}
+h1, h3{
+line-height: 2em;
+font-weight: 600;
+}
+p{
+padding:10px 0px;
+font-size: 16px;
+}
+.wrapper{
+width:50%;
+margin-left: 25%;
+margin-right: 25%;
+margin-top: 5%;
+padding: 30px;
+background: #fff;
+}
+.header, .skill, .edu, .exp, .achieve{
+padding: 10px;
+}
+hr{
+margin: 10px;
+}
+.skill, .edu, .exp, .achieve{
+    display: flex;
+}
+.skill{gap:18%;
+}
+.exp{
+gap:11%;
+
+}
+
+.achieve{
+
+    gap:7%;
+}

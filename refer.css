@@ -1,0 +1,35 @@
+.grid-container{
+
+display:grid;
+width:700px;
+height:100vh;
+grid-template-columns: 100px 200px ;
+
+/* align-items: end; */
+/* align-content: end; */
+
+/* justify-content: center; */
+
+
+
+
+}
+
+
+.item2{
+  grid-column-start:1;
+grid-column-end: 2;
+
+
+
+  /* justify-self:center; */
+border:2px solid blue;
+background-color: salmon;
+}
+
+
+/* .sub-container{
+display:grid;
+align-content: center;
+
+} */

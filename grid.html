@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid work</title>
+
+<style>
+
+.container{
+
+display: grid;
+
+/* grid-template-areas: 
+
+"header header header"
+
+"sidebar sidebar content"
+
+"menu menu content"
+
+"footer footer footer"; */
+
+grid-template-columns:100px 200px 300px;
+
+grid-template-rows:200px 200px 200px;
+
+/* grid-template:400px 200px 300px/600px 400px 400px; */
+
+
+/* grid-auto-columns: 200px;
+grid-auto-rows: 50px; */
+
+border:3px solid red;
+width:900px;
+height:900px;
+
+/* grid-auto-flow:row dense; */
+
+place-content:end;
+
+
+}
+
+
+
+
+.item1{
+
+/* grid-area: header; */
+background-color: blue;
+/* grid-area: 1/2/3/4; */
+/* grid-column:span 2; 
+grid-row: span 2;
+grid-auto-flow:row dense; */
+}
+
+.item2{
+
+/* grid-area:sidebar; */
+background-color: aquamarine;
+}
+
+
+.item3{
+
+/* grid-area:content; */
+background-color: brown;
+
+/* place-self: end; */
+
+/* width:200px;
+height:100px; */
+
+}
+
+
+.item4{
+
+/* grid-area: menu; */
+background-color: beige;
+}
+
+.item5{
+
+    /* grid-area:footer; */
+    background-color: cadetblue;
+}
+
+.item6{
+
+    background-color: pink;
+}
+
+
+.item7{
+
+background-color: rgb(235, 217, 52);
+}
+
+
+.item8{
+
+background-color: rgb(29, 219, 35);
+}
+
+
+.item9{
+
+background-color: rgb(206, 97, 115);
+}
+
+
+</style>
+
+
+
+</head>
+<body>
+    
+
+<div class="container">
+
+
+<div class="item1">1</div>
+<div class="item2">2</div>
+<div class="item3">3</div>
+<div class="item4">4</div>
+<div class="item5">5</div>
+<div class="item6">6</div>
+<div class="item7">7</div>
+<div class="item8">8</div>
+<div class="item9">9</div>
+
+
+</div>
+
+
+
+</body>
+</html>
